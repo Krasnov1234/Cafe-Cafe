@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Кафе"
         mc:Ignorable="d"
+        MinHeight="400"
+        MaxHeight="450"
         Title="dismissed" Height="403.608" Width="513.917" 
         WindowStartupLocation="CenterScreen">
     <Grid>
