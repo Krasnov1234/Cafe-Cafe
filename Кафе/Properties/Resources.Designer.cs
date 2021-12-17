@@ -19,7 +19,7 @@ namespace Кафе.Properties {
     // с помощью такого средства, как ResGen или Visual Studio.
     // Чтобы добавить или удалить член, измените файл .ResX и снова запустите ResGen
     // с параметром /str или перестройте свой проект VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,23 @@ namespace Кафе.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на &lt;ResourceDictionary xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        ///                    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;&gt;
+        ///    &lt;Style x:Key=&quot;Entrance&quot; TargetType=&quot;Button&quot;&gt;
+        ///        &lt;Setter Property=&quot;Background&quot; Value=&quot;#FFFFE64A&quot;/&gt;
+        ///        &lt;Setter Property=&quot;Foreground&quot; Value=&quot;#FF7F42EA&quot;/&gt;
+        ///        &lt;Setter Property=&quot;Template&quot;&gt;
+        ///            &lt;Setter.Value&gt;
+        ///                &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;
+        ///                    &lt;Border CornerRadius=&quot;15&quot; Background=&quot;{ [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string ButtonStyle {
+            get {
+                return ResourceManager.GetString("ButtonStyle", resourceCulture);
             }
         }
         
@@ -116,16 +133,6 @@ namespace Кафе.Properties {
         internal static System.Drawing.Bitmap Уволенные {
             get {
                 object obj = ResourceManager.GetObject("Уволенные", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Фон_входа {
-            get {
-                object obj = ResourceManager.GetObject("Фон_входа", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
