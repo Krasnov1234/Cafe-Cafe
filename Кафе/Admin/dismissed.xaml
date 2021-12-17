@@ -11,29 +11,39 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/Уволенные.jpg"/>
         </Grid.Background>
-        
-        <DataGrid HorizontalAlignment="Left"
-                  Height="290"
-                  Margin="10,10,0,0" 
-                  VerticalAlignment="Top"
-                  Width="298"/>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Column="0" 
+                  Grid.ColumnSpan="2"
+                  Grid.RowSpan="3"
+                  Margin="10"/>
+
         <Button Content="Востановить"
-                HorizontalAlignment="Left"
-                Margin="313,302,0,0"
-                VerticalAlignment="Top" 
-                Width="126" 
-                Height="37" 
+                Grid.Column="2" Grid.ColumnSpan="3" 
+                Grid.Row="3"
+                Width="120"
+                Height="50" 
                 Style="{StaticResource Entrance}"
                 Background="#FF8EF96E" 
                 FontSize="20" 
                 Click="Button_Click"/>
 
         <Button Content="Назад"
-                HorizontalAlignment="Left"
-                Margin="24,310,0,0"
-                VerticalAlignment="Top"
-                Width="75" 
+                Grid.Column="0" 
+                Grid.Row="3"
+                Width="120"
+                Height="50"
+                VerticalAlignment="Center" 
                 Style="{StaticResource Entrance}" 
                 Background="#FF8EF96E" 
                 FontSize="20" 
