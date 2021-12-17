@@ -35,7 +35,8 @@ namespace Кафе
                 Hide();
                 Administrator admin = new Administrator();
                 admin.Show();
-                //admin.sotr.Visibility = System.Windows.Visibility.Collapsed;
+                admin.stol.Visibility = System.Windows.Visibility.Visible;
+                admin.sotr.Visibility = System.Windows.Visibility.Visible;
 
                 Close();
             }

@@ -126,31 +126,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Фон входа.jpg" />
+    <Resource Include="Resources\Фон входа.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Администратор.jpg" />
+    <Resource Include="Resources\Администратор.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Уволенные.jpg" />
+    <Resource Include="Resources\Уволенные.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Admin\Заказы.jpg" />
+    <Resource Include="Resources\сотрудники.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Admin\Уволенные.jpg" />
+    <Resource Include="Resources\Столики.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Admin\сотрудники.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Admin\Столики.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Cooks\Заказы.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Waiters\Заказы.jpg" />
+    <Resource Include="Resources\Заказы.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\myla_01.mp3" />
