@@ -71,7 +71,7 @@
 
         <Button x:Name="Entrance" 
                 Content="Вход" 
-                ToolTip="Есть пароль входишь &#10;Нетпароль не входишь "
+                ToolTip="Есть пароль входишь &#10;Нет пароль не входишь "
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center" 
                 Width="110" 
