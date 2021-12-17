@@ -8,7 +8,7 @@
         Title="order" Height="450" Width="721.134">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Заказы.jpg"/>
+            <ImageBrush ImageSource="/Resources/Заказы.jpg"/>
         </Grid.Background>
         
         
