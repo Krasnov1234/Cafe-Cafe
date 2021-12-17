@@ -4,20 +4,6 @@
              xmlns:local="clr-namespace:Кафе"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style x:Key="Entrance" TargetType="Button">
-            <Setter Property="Background" Value="#FFFFE64A"/>
-            <Setter Property="Foreground" Value="#FF7F42EA"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="15" Background="{TemplateBinding Background}" BorderThickness="1">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
-                                
-                            </ContentPresenter>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+        <ResourceDictionary Source="Resources\BittonStyle.xaml"/>
     </Application.Resources>
 </Application>
