@@ -4,21 +4,82 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Кафе"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Кафе" Height="450" Width="747.5" WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        MinHeight="400"
+        MinWidth="450"
+        WindowStyle="SingleBorderWindow"
+        Title="Кафе" Height="450" Width="747.5" >
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Resources/Администратор.jpg"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="273,41,0,0" TextWrapping="Wrap" Text="Кофиёк" VerticalAlignment="Top" Height="78" Width="190" FontSize="50" FontWeight="Bold" Foreground="#FF7F42EA"/>
-        <TextBox x:Name="login" HorizontalAlignment="Left" Height="24" Margin="273,172,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" BorderBrush="Black"/>
-        <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="24" Margin="273,234,0,0"   VerticalAlignment="Top" Width="190" BorderBrush="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="332,145,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontSize="20" Foreground="#FF7F42EA" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="332,202,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontSize="20" Foreground="#FF7F42EA" FontWeight="Bold"/>
 
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock HorizontalAlignment="Center" 
+                   TextWrapping="Wrap" 
+                   Text="Кофиёк" 
+                   VerticalAlignment="Top" 
+                   Height="78" 
+                   Width="190" 
+                   FontSize="50" 
+                   FontWeight="Bold"
+                   Foreground="#FF7F42EA"
+                   Grid.Column="1" Grid.ColumnSpan="2"
+                   Grid.Row="1"/>
+        
+        <TextBox x:Name="login" 
+                 materialDesign:HintAssist.Hint="Введите логин"
+                 ToolTip="Введите логин"
+                 HorizontalAlignment="Center"
+                 Height="24" 
+                 TextWrapping="Wrap" 
+                 Margin="0,10,0,0"
+                 VerticalAlignment="Top"
+                 Width="190" 
+                 BorderBrush="Black"
+                 Grid.Column="1" Grid.ColumnSpan="2"
+                 Grid.Row="2"/>
+        
+        <PasswordBox x:Name="password"
+                     materialDesign:HintAssist.Hint="Введите пароль"
+                     HorizontalAlignment="Center"
+                     Height="24"  
+                     VerticalAlignment="Top" 
+                     Width="190"
+                     BorderBrush="Black"
+                     Grid.Column="1" Grid.ColumnSpan="2"
+                     Grid.Row="3"
+                     Margin="0,-25,0,0"/>
+        
+        
 
-        <Button x:Name="Entrance" Content="Вход"  HorizontalAlignment="Left" Margin="310,302,0,0" VerticalAlignment="Top" Width="110" Height="42" FontSize="20"  Style="{StaticResource Entrance}" Click="Entrance_Click" />
+        <Button x:Name="Entrance" 
+                Content="Вход" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" 
+                Width="110" 
+                Height="42" 
+                FontSize="20" 
+                Style="{StaticResource Entrance}"
+                Click="Entrance_Click" 
+                Grid.Column="1" Grid.ColumnSpan="2"
+                Grid.Row="3"/>
 
     </Grid>
 </Window>
