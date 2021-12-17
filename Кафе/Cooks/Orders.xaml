@@ -5,37 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Кафе.Cooks"
         mc:Ignorable="d"
-        Title="Orders" Height="460.825" Width="629.897" WindowStartupLocation="CenterScreen" >
+        MinHeight="400"
+        MinWidth="500"
+        WindowStartupLocation="CenterScreen" 
+        Title="Заказы" Height="450" Width="650" >
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Кафе;component/Resources/Заказы.jpg"/>
         </Grid.Background>
-        <DataGrid HorizontalAlignment="Left" 
-                  Height="358"
-                  Margin="26,10,0,0" 
-                  VerticalAlignment="Top"
-                  Width="238"/>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+
+        <DataGrid Margin="10"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  Grid.Row="0"
+                  Grid.RowSpan="4">
+            
+        </DataGrid>
         
         <Button Content="Готовится"
-                HorizontalAlignment="Left"
-                Margin="287,136,0,0"
-                VerticalAlignment="Top"
                 Width="118" Height="48" 
+                Grid.Column="2"
+                Grid.Row="1"
                 Click="preparing"  FontSize="20"
                 Style="{StaticResource Entrance}"
                 Background="#FF8EF96E"/>
         
         <Button Content="Готов"
-                HorizontalAlignment="Left"
-                Margin="287,223,0,0" VerticalAlignment="Top"
+                Grid.Column="2"
+                Grid.Row="2"
                 Width="118" Height="48" Click="ready"
                 FontSize="20" Style="{StaticResource Entrance}" 
                 Background="#FF8EF96E"/>
         
         <Button Content="Назад" 
-                HorizontalAlignment="Left"
-                Margin="10,373,0,0"
-                VerticalAlignment="Top" 
+                Grid.Row="4"
                 Width="118"
                 Height="48" Click="back" 
                 FontSize="20" Style="{StaticResource Entrance}"
