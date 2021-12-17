@@ -135,25 +135,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Фон входа.jpg" />
+    <None Include="Resources\Администратор.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Администратор.jpg" />
+    <None Include="Resources\Заказы.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Уволенные.jpg" />
+    <None Include="Resources\сотрудники.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\сотрудники.jpg" />
+    <None Include="Resources\Столики.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Столики.jpg" />
+    <None Include="Resources\Уволенные.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Заказы.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\myla_01.mp3" />
+    <None Include="Resources\myla_01.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" />
