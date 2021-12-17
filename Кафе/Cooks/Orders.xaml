@@ -8,12 +8,38 @@
         Title="Orders" Height="460.825" Width="629.897" WindowStartupLocation="CenterScreen" >
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Заказы.jpg"/>
+            <ImageBrush ImageSource="/Кафе;component/Resources/Заказы.jpg"/>
         </Grid.Background>
-        <DataGrid HorizontalAlignment="Left" Height="358" Margin="26,10,0,0" VerticalAlignment="Top" Width="238"/>
-        <Button Content="Готовится" HorizontalAlignment="Left" Margin="287,136,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="preparing"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
-        <Button Content="Готов" HorizontalAlignment="Left" Margin="287,223,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="ready"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="back"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
+        <DataGrid HorizontalAlignment="Left" 
+                  Height="358"
+                  Margin="26,10,0,0" 
+                  VerticalAlignment="Top"
+                  Width="238"/>
+        
+        <Button Content="Готовится"
+                HorizontalAlignment="Left"
+                Margin="287,136,0,0"
+                VerticalAlignment="Top"
+                Width="118" Height="48" 
+                Click="preparing"  FontSize="20"
+                Style="{StaticResource Entrance}"
+                Background="#FF8EF96E"/>
+        
+        <Button Content="Готов"
+                HorizontalAlignment="Left"
+                Margin="287,223,0,0" VerticalAlignment="Top"
+                Width="118" Height="48" Click="ready"
+                FontSize="20" Style="{StaticResource Entrance}" 
+                Background="#FF8EF96E"/>
+        
+        <Button Content="Назад" 
+                HorizontalAlignment="Left"
+                Margin="10,373,0,0"
+                VerticalAlignment="Top" 
+                Width="118"
+                Height="48" Click="back" 
+                FontSize="20" Style="{StaticResource Entrance}"
+                Background="#FF8EF96E"/>
 
     </Grid>
 </Window>

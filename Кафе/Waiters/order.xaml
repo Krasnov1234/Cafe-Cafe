@@ -12,14 +12,65 @@
         </Grid.Background>
         
         
-        <DataGrid HorizontalAlignment="Left" Height="343" Margin="10,10,0,0" VerticalAlignment="Top" Width="357"/>
-        <ComboBox HorizontalAlignment="Left" Margin="467,58,0,0" VerticalAlignment="Top" Width="125" Height="28"/>
-        <Button Content="Принят" HorizontalAlignment="Left" Margin="474,207,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="adopted"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
-        <Button Content="Оплачен" HorizontalAlignment="Left" Margin="474,281,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="paid"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="27,361,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="back"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
-        <ComboBox HorizontalAlignment="Left" Margin="467,132,0,0" VerticalAlignment="Top" Width="125" Height="30"/>
-        <TextBlock HorizontalAlignment="Left" Margin="503,30,0,0" TextWrapping="Wrap" Text="Заказ" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="460,100,0,0" TextWrapping="Wrap" Text="Способ оплаты" VerticalAlignment="Top" FontSize="20"/>
+        <DataGrid HorizontalAlignment="Left"
+                  Height="343" Margin="10,10,0,0"
+                  VerticalAlignment="Top"
+                  Width="357"/>
+        
+        <ComboBox HorizontalAlignment="Left"
+                  Margin="467,58,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="125"
+                  Height="28"/>
+        
+        <Button Content="Принят" 
+                HorizontalAlignment="Left"
+                Margin="474,207,0,0" 
+                VerticalAlignment="Top" 
+                Width="118" Height="48" 
+                Click="adopted"  
+                FontSize="20" 
+                Style="{StaticResource Entrance}"
+                Background="#FF8EF96E"/>
+        
+        <Button Content="Оплачен"
+                HorizontalAlignment="Left"
+                Margin="474,281,0,0"
+                VerticalAlignment="Top"
+                Width="118" Height="48" 
+                Click="paid"  
+                FontSize="20"
+                Style="{StaticResource Entrance}"
+                Background="#FF8EF96E"/>
+        
+        <Button Content="Назад"
+                HorizontalAlignment="Left"
+                Margin="27,361,0,0"
+                VerticalAlignment="Top"
+                Width="118" Height="48" 
+                Click="back"  
+                FontSize="20"
+                Style="{StaticResource Entrance}"
+                Background="#FF8EF96E"/>
+        
+        <ComboBox HorizontalAlignment="Left"
+                  Margin="467,132,0,0"
+                  VerticalAlignment="Top"
+                  Width="125" Height="30"/>
+        
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="503,30,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Заказ"
+                   VerticalAlignment="Top"
+                   FontSize="20"/>
+        
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="460,100,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Способ оплаты"
+                   VerticalAlignment="Top" 
+                   FontSize="20"/>
 
     </Grid>
 </Window>

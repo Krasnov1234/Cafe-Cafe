@@ -8,7 +8,7 @@
         Title="Кафе" Height="450" Width="747.5" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Фон входа.jpg"/>
+            <ImageBrush ImageSource="Resources/Администратор.jpg"/>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Margin="273,41,0,0" TextWrapping="Wrap" Text="Кофиёк" VerticalAlignment="Top" Height="78" Width="190" FontSize="50" FontWeight="Bold" Foreground="#FF7F42EA"/>
         <TextBox x:Name="login" HorizontalAlignment="Left" Height="24" Margin="273,172,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" BorderBrush="Black"/>
