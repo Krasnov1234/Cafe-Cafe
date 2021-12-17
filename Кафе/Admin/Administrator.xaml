@@ -174,7 +174,8 @@
                            Margin="190,10,0,0" 
                            VerticalAlignment="Top" 
                            Width="162" 
-                           Stretch="Fill" />
+                           Stretch="Fill" 
+                           />
 
                     <ComboBox HorizontalAlignment="Left"
                               materialDesign:HintAssist.Hint="Перейти в карточку"
