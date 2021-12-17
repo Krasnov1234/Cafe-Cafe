@@ -10,6 +10,8 @@
         <Grid.Background>
             <ImageBrush ImageSource="Заказы.jpg"/>
         </Grid.Background>
+        
+        
         <DataGrid HorizontalAlignment="Left" Height="343" Margin="10,10,0,0" VerticalAlignment="Top" Width="357"/>
         <ComboBox HorizontalAlignment="Left" Margin="467,58,0,0" VerticalAlignment="Top" Width="125" Height="28"/>
         <Button Content="Принят" HorizontalAlignment="Left" Margin="474,207,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="adopted"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
