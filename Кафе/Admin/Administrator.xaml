@@ -8,117 +8,395 @@
         Title="Administrator" Height="474" Width="800" WindowStartupLocation="CenterScreen">
 
 	<Grid>
-		<TabControl>
+        <TabControl>
 
-			<TabItem x:Name="sotr" Header="Сорудники">
-				<Grid>
-					<Grid.Background>
-						<ImageBrush ImageSource="сотрудники.jpg"/>
-					</Grid.Background>
-					<TextBox HorizontalAlignment="Left" Height="22" Margin="443,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFFFF975"/>
-					<TextBox HorizontalAlignment="Left" Height="22" Margin="443,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFFFF975"/>
-					<TextBox HorizontalAlignment="Left" Height="22" Margin="443,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFFFF975"/>
-					<TextBox HorizontalAlignment="Left" Height="22" Margin="443,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#FFFFF975"/>
-					<TextBlock HorizontalAlignment="Left" Margin="415,50,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top"/>
-					<TextBlock HorizontalAlignment="Left" Margin="389,78,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top"/>
-					<TextBlock HorizontalAlignment="Left" Margin="389,106,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top"/>
-					<TextBlock HorizontalAlignment="Left" Margin="371,134,0,0" TextWrapping="Wrap" Text="Функционал" VerticalAlignment="Top" />
-					<TextBlock HorizontalAlignment="Left" Margin="590,105,0,0" TextWrapping="Wrap" Text="Перейи в карточку" VerticalAlignment="Top" Width="170" FontSize="18"/>
+            <TabItem x:Name="sotr" Header="Сорудники">
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Resources/сотрудники.jpg"/>
+                    </Grid.Background>
 
-					<Button  HorizontalAlignment="Left" Margin="700,40,0,0" VerticalAlignment="Top" Width="60" Style="{StaticResource Entrance}"  Height="54" Click="Jami_Jami">
-						<Button.Background>
-							<SolidColorBrush  Opacity="0"/>
-						</Button.Background>
-					</Button>
+                    <TextBox HorizontalAlignment="Left" 
+                             Height="22" 
+                             Margin="443,50,0,0" 
+                             TextWrapping="Wrap" 
+                             Text="" 
+                             VerticalAlignment="Top" 
+                             Width="120" 
+                             Background="#FFFFF975"/>
 
+                    <TextBox HorizontalAlignment="Left" 
+                             Height="22" Margin="443,78,0,0" 
+                             TextWrapping="Wrap" Text=""
+                             VerticalAlignment="Top" 
+                             Width="120" 
+                             Background="#FFFFF975"/>
 
-					<Button Content="Добавить" HorizontalAlignment="Left" Margin="459,178,0,0" VerticalAlignment="Top" Width="104" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Height="34" Click="Button_Click_1"/>
-					<Button Content="Удалить" HorizontalAlignment="Left" Margin="651,177,0,0" VerticalAlignment="Top" Width="92" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Height="35" Click="Button_Click_2"/>
-					<Button Content="Уволенные" HorizontalAlignment="Left" Margin="651,364,0,0" VerticalAlignment="Top" Width="125" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Height="34" Click="Button_Click_3"/>
-					<Button Content="Назад" HorizontalAlignment="Left" Margin="26,358,0,0" VerticalAlignment="Top" Width="81" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Height="32" Click="Back"/>
-					<Button Content="Добавить фото" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="160" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Height="35" Click="Open_click"/>
+                    <TextBox HorizontalAlignment="Left" 
+                             Height="22" 
+                             Margin="443,106,0,0" 
+                             TextWrapping="Wrap" 
+                             Text="" 
+                             VerticalAlignment="Top" 
+                             Width="120" 
+                             Background="#FFFFF975"/>
 
-					<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left"  Height="163" Margin="7,10,0,0" VerticalAlignment="Top" Width="163" Background="White"/>
-					<Image x:Name="Foto" AllowDrop="True" HorizontalAlignment="Left" Height="163" Margin="7,10,0,0" VerticalAlignment="Top" Width="163" Stretch="Fill" />
+                    <TextBox HorizontalAlignment="Left" 
+                             Height="22" 
+                             Margin="443,134,0,0" 
+                             TextWrapping="Wrap" 
+                             Text="" 
+                             VerticalAlignment="Top"
+                             Width="120" 
+                             Background="#FFFFF975"/>
 
-					<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="246" Margin="190,10,0,0" VerticalAlignment="Top" Width="162" Background="White"/>
-					<Button Content="Добавиь договор" HorizontalAlignment="Left" Margin="190,272,0,0" VerticalAlignment="Top" Width="173" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Height="35" Click="Open_click_cotract"/>
-					<Image x:Name="Foto_cotract" HorizontalAlignment="Left" Height="246" Margin="190,10,0,0" VerticalAlignment="Top" Width="162" Stretch="Fill" />
-					<ComboBox HorizontalAlignment="Left" Margin="609,134,0,0" VerticalAlignment="Top" Width="134" Height="31"/>
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="415,50,0,0" 
+                               TextWrapping="Wrap" 
+                               Text="Имя" 
+                               VerticalAlignment="Top"/>
 
-					<StackPanel x:Name="DropArea" Drop="FileDropPanel_Drop" AllowDrop="True"  HorizontalAlignment="Left" Height="163" Margin="10,10,0,0" VerticalAlignment="Top" Width="160" >
-						<Rectangle Stroke="#FF000000" Height="160" StrokeThickness="1" StrokeDashArray="4 4" />
-					</StackPanel>
+                    <TextBlock HorizontalAlignment="Left" 
+                               Margin="389,78,0,0" 
+                               TextWrapping="Wrap" 
+                               Text="Фамилия" 
+                               VerticalAlignment="Top"/>
 
+                    <TextBlock HorizontalAlignment="Left" 
+                               Margin="389,106,0,0" 
+                               TextWrapping="Wrap" 
+                               Text="Отчество" 
+                               VerticalAlignment="Top"/>
 
-				</Grid>
-			</TabItem>
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="371,134,0,0" 
+                               TextWrapping="Wrap" 
+                               Text="Функционал" 
+                               VerticalAlignment="Top" />
 
+                    <TextBlock HorizontalAlignment="Left" 
+                               Margin="590,105,0,0" 
+                               TextWrapping="Wrap" 
+                               Text="Перейи в карточку" 
+                               VerticalAlignment="Top" 
+                               Width="170" 
+                               FontSize="18"/>
 
-			<TabItem x:Name="stol" Header="Столики">
-				<Grid>
-					<Grid.Background>
-						<ImageBrush ImageSource="Столики.jpg"/>
-					</Grid.Background>
-					<DataGrid HorizontalAlignment="Left" Height="341" Margin="35,10,0,0" VerticalAlignment="Top" Width="316"/>
-					<TextBox HorizontalAlignment="Left" Height="23" Margin="441,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-					<TextBlock HorizontalAlignment="Left" Margin="456,106,0,0" TextWrapping="Wrap" Text="Столик" VerticalAlignment="Top" FontSize="24"/>
-					<Button Content="Назад" HorizontalAlignment="Left" Margin="35,356,0,0" VerticalAlignment="Top" Width="89" Style="{StaticResource Entrance}" Background="#FF8EF96E" Height="32" FontSize="20" Click="Back" />
-					<Button Content="Назначить столик" HorizontalAlignment="Left" Margin="389,182,0,0" VerticalAlignment="Top" Width="229" Height="47" FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E" Click="Button_Click_4"/>
+                    <Button  HorizontalAlignment="Left" 
+                             Margin="700,40,0,0" 
+                             VerticalAlignment="Top" 
+                             Width="60" 
+                             Style="{StaticResource Entrance}" 
+                             Height="54" Click="Jami_Jami">
 
-				</Grid>
-			</TabItem>
-
-
-			<TabItem x:Name="smen" Header="Смены">
-				<Grid>
-					<Grid.Background>
-						<ImageBrush ImageSource="сотрудники.jpg"/>
-					</Grid.Background>
-
-				</Grid>
-			</TabItem>
-
-
-			<TabItem x:Name="sak" Header="Заказы">
-
-				<Grid>
-
-					<Grid.Background>
-						<ImageBrush ImageSource="Заказы.jpg"/>
-					</Grid.Background>
-
-
-					<Border  BorderThickness="1" HorizontalAlignment="Left" Height="334" Margin="10,22,0,0" VerticalAlignment="Top" Width="253" Grid.ColumnSpan="2">
-						<DataGrid x:Name="Table_not_paid" AutoGenerateColumns="False" Margin="0,9,-1,9" >
-							<DataGrid.Columns>
-
-							</DataGrid.Columns>
-						</DataGrid>
-
-					</Border>
-
-					<Button Content="Оплачено" HorizontalAlignment="Left" Margin="268,272,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="pay"  FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
-					<Button Content="Отчёт" HorizontalAlignment="Left" Margin="133,356,0,0" VerticalAlignment="Top" Width="118" Height="48" Click="not_paid" FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E"/>
-					<Button Content="Отчёт" HorizontalAlignment="Left" Margin="563,356,0,-13" VerticalAlignment="Top" Width="118" Height="48" Click="paid" FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E" Grid.Column="1"/>
-					<Button Content="Назад" HorizontalAlignment="Left" Margin="10,356,0,-13" VerticalAlignment="Top" Width="118" Height="48" Click="Back" FontSize="20" Style="{StaticResource Entrance}" Background="#FF8EF96E" Grid.ColumnSpan="2" />
-
-					<Border  BorderThickness="1" HorizontalAlignment="Left" Height="356" Margin="495,0,0,0" VerticalAlignment="Top" Width="243" Grid.Column="1">
-						<DataGrid Margin="-11,33,-1,9">
-
-						</DataGrid>
+                        <Button.Background>
+                            <SolidColorBrush  Opacity="0"/>
+                        </Button.Background>
+                    </Button>
 
 
-					</Border>
-					<TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Не оплачено" VerticalAlignment="Top" FontSize="24" Foreground="Black" Background="White" Width="253" TextAlignment="Center" Grid.ColumnSpan="2"  />
-					<TextBlock HorizontalAlignment="Left" Margin="485,0,0,0" TextWrapping="Wrap" Text="Оплачено" VerticalAlignment="Top" FontSize="24" Foreground="Black" Background="White" Width="253" TextAlignment="Center" Grid.Column="1"  />
+                    <Button Content="Добавить" 
+                            HorizontalAlignment="Left" 
+                            Margin="459,178,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="104" 
+                            Style="{StaticResource Entrance}" 
+                            Background="#FF8EF96E" 
+                            FontSize="20" 
+                            Height="34" 
+                            Click="Button_Click_1"/>
+
+                    <Button Content="Удалить" 
+                            HorizontalAlignment="Left" 
+                            Margin="651,177,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="92" 
+                            Style="{StaticResource Entrance}" 
+                            Background="#FF8EF96E" 
+                            FontSize="20" 
+                            Height="35" 
+                            Click="Button_Click_2"/>
+
+                    <Button Content="Уволенные" 
+                            HorizontalAlignment="Left" 
+                            Margin="651,364,0,0" 
+                            VerticalAlignment="Top"
+                            Width="125" 
+                            Style="{StaticResource Entrance}" 
+                            Background="#FF8EF96E" 
+                            FontSize="20" 
+                            Height="34" 
+                            Click="Button_Click_3"/>
+
+                    <Button Content="Назад" 
+                            HorizontalAlignment="Left" 
+                            Margin="26,358,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="81" 
+                            Style="{StaticResource Entrance}" 
+                            Background="#FF8EF96E" 
+                            FontSize="20" 
+                            Height="32" 
+                            Click="Back"/>
+
+                    <Button Content="Добавить фото" 
+                            HorizontalAlignment="Left" 
+                            Margin="10,178,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="160" 
+                            Style="{StaticResource Entrance}"
+                            Background="#FF8EF96E" 
+                            FontSize="20" 
+                            Height="35" 
+                            Click="Open_click"/>
+
+                    <Border BorderBrush="Black" 
+                            BorderThickness="1" 
+                            HorizontalAlignment="Left"  
+                            Height="163" 
+                            Margin="7,10,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="163" 
+                            Background="White"/>
+
+                    <Image x:Name="Foto" 
+                           AllowDrop="True" 
+                           HorizontalAlignment="Left" 
+                           Height="163"
+                           Margin="7,10,0,0" 
+                           VerticalAlignment="Top" 
+                           Width="163" 
+                           Stretch="Fill" />
+
+                    <Border BorderBrush="Black" 
+                            BorderThickness="1"
+                            HorizontalAlignment="Left" 
+                            Height="246"
+                            Margin="190,10,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="162" 
+                            Background="White"/>
+
+                    <Button Content="Добавиь договор" 
+                            HorizontalAlignment="Left" 
+                            Margin="190,272,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="173" 
+                            Style="{StaticResource Entrance}" 
+                            Background="#FF8EF96E" 
+                            FontSize="20" 
+                            Height="35" 
+                            Click="Open_click_cotract"/>
+
+                    <Image x:Name="Foto_cotract"
+                           HorizontalAlignment="Left" 
+                           Height="246" 
+                           Margin="190,10,0,0" 
+                           VerticalAlignment="Top" 
+                           Width="162" 
+                           Stretch="Fill" />
+
+                    <ComboBox HorizontalAlignment="Left" 
+                              Margin="609,134,0,0" 
+                              VerticalAlignment="Top" 
+                              Width="134" 
+                              Height="31"/>
+
+                    <StackPanel x:Name="DropArea" 
+                                Drop="FileDropPanel_Drop" 
+                                AllowDrop="True"  
+                                HorizontalAlignment="Left" 
+                                Height="163" 
+                                Margin="10,10,0,0" 
+                                VerticalAlignment="Top"
+                                Width="160" >
+
+                        <Rectangle Stroke="#FF000000"
+                                   Height="160" 
+                                   StrokeThickness="1"
+                                   StrokeDashArray="4 4" />
+                    </StackPanel>
 
 
-				</Grid>
-			</TabItem>
+                </Grid>
+            </TabItem>
 
 
-		</TabControl>
+            <TabItem x:Name="stol" Header="Столики">
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Resources/Столики.jpg"/>
+                    </Grid.Background>
 
-	</Grid>
+                    <DataGrid HorizontalAlignment="Left"
+                              Height="341" 
+                              Margin="35,10,0,0"
+                              VerticalAlignment="Top" 
+                              Width="316"/>
+
+                    <TextBox HorizontalAlignment="Left" 
+                             Height="23" 
+                             Margin="441,138,0,0" 
+                             TextWrapping="Wrap" 
+                             Text="" 
+                             VerticalAlignment="Top"
+                             Width="120"/>
+
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="456,106,0,0"
+                               TextWrapping="Wrap"
+                               Text="Столик"
+                               VerticalAlignment="Top"
+                               FontSize="24"/>
+
+                    <Button Content="Назад" 
+                            HorizontalAlignment="Left"
+                            Margin="35,356,0,0"
+                            VerticalAlignment="Top"
+                            Width="89" 
+                            Style="{StaticResource Entrance}"
+                            Background="#FF8EF96E"
+                            Height="32"
+                            FontSize="20"
+                            Click="Back" />
+
+                    <Button Content="Назначить столик"
+                            HorizontalAlignment="Left"
+                            Margin="389,182,0,0" 
+                            VerticalAlignment="Top"
+                            Width="229" 
+                            Height="47" 
+                            FontSize="20" 
+                            Style="{StaticResource Entrance}"
+                            Background="#FF8EF96E"
+                            Click="Button_Click_4"/>
+
+                </Grid>
+            </TabItem>
+
+
+            <TabItem x:Name="smen" Header="Смены">
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Resources/сотрудники.jpg" />
+                    </Grid.Background>
+
+                </Grid>
+            </TabItem>
+
+
+            <TabItem x:Name="sak" Header="Заказы">
+
+                <Grid>
+
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Resources/Заказы.jpg"/>
+                    </Grid.Background>
+
+
+                    <Border  BorderThickness="1"
+                             HorizontalAlignment="Left"
+                             Height="334" 
+                             Margin="10,22,0,0" 
+                             VerticalAlignment="Top"
+                             Width="253" 
+                             Grid.ColumnSpan="2">
+                        
+                        <DataGrid x:Name="Table_not_paid" 
+                                  AutoGenerateColumns="False" 
+                                  Margin="0,9,-1,9" >
+                            <DataGrid.Columns>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </Border>
+
+                    <Button Content="Оплачено"
+                            HorizontalAlignment="Left" 
+                            Margin="268,272,0,0"
+                            VerticalAlignment="Top" 
+                            Width="118"
+                            Height="48"
+                            Click="pay"  
+                            FontSize="20" 
+                            Style="{StaticResource Entrance}"
+                            Background="#FF8EF96E"/>
+
+                    <Button Content="Отчёт" 
+                            HorizontalAlignment="Left" 
+                            Margin="133,356,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="118" 
+                            Height="48" 
+                            Click="not_paid" 
+                            FontSize="20" 
+                            Style="{StaticResource Entrance}"
+                            Background="#FF8EF96E"/>
+
+                    <Button Content="Отчёт" 
+                            HorizontalAlignment="Left"
+                            Margin="563,356,0,-13"
+                            VerticalAlignment="Top"
+                            Width="118" 
+                            Height="48"
+                            Click="paid" 
+                            FontSize="20" 
+                            Style="{StaticResource Entrance}" 
+                            Background="#FF8EF96E" 
+                            Grid.Column="1"/>
+
+                    <Button Content="Назад" 
+                            HorizontalAlignment="Left" 
+                            Margin="10,356,0,-13" 
+                            VerticalAlignment="Top" 
+                            Width="118" 
+                            Height="48" 
+                            Click="Back" 
+                            FontSize="20"
+                            Style="{StaticResource Entrance}" 
+                            Background="#FF8EF96E"
+                            Grid.ColumnSpan="2" />
+
+                    <Border  BorderThickness="1" 
+                             HorizontalAlignment="Left"
+                             Height="356" 
+                             Margin="495,0,0,0" 
+                             VerticalAlignment="Top" 
+                             Width="243"
+                             Grid.Column="1">
+
+                        <DataGrid Margin="-11,33,-1,9">
+
+                        </DataGrid>
+
+
+                    </Border>
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="10,0,0,0"
+                               TextWrapping="Wrap"
+                               Text="Не оплачено" 
+                               VerticalAlignment="Top" 
+                               FontSize="24" 
+                               Foreground="Black"
+                               Background="White"
+                               Width="253" 
+                               TextAlignment="Center"
+                               Grid.ColumnSpan="2"  />
+
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="485,0,0,0" 
+                               TextWrapping="Wrap" 
+                               Text="Оплачено" 
+                               VerticalAlignment="Top" 
+                               FontSize="24" 
+                               Foreground="Black" 
+                               Background="White" 
+                               Width="253"
+                               TextAlignment="Center"
+                               Grid.Column="1"  />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
 </Window>

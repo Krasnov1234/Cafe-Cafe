@@ -5,14 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Кафе"
         mc:Ignorable="d"
-        Title="dismissed" Height="403.608" Width="513.917" WindowStartupLocation="CenterScreen">
+        Title="dismissed" Height="403.608" Width="513.917" 
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Уволенные.jpg"/>
+            <ImageBrush ImageSource="/Resources/Уволенные.jpg"/>
         </Grid.Background>
-        <DataGrid HorizontalAlignment="Left" Height="290" Margin="10,10,0,0" VerticalAlignment="Top" Width="298"/>
-        <Button Content="Востановить" HorizontalAlignment="Left" Margin="313,302,0,0" VerticalAlignment="Top" Width="126" Height="37" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Click="Button_Click"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="24,310,0,0" VerticalAlignment="Top" Width="75" Style="{StaticResource Entrance}" Background="#FF8EF96E" FontSize="20" Click="back"/>
+        
+        <DataGrid HorizontalAlignment="Left"
+                  Height="290"
+                  Margin="10,10,0,0" 
+                  VerticalAlignment="Top"
+                  Width="298"/>
+        
+        <Button Content="Востановить"
+                HorizontalAlignment="Left"
+                Margin="313,302,0,0"
+                VerticalAlignment="Top" 
+                Width="126" 
+                Height="37" 
+                Style="{StaticResource Entrance}"
+                Background="#FF8EF96E" 
+                FontSize="20" 
+                Click="Button_Click"/>
 
+        <Button Content="Назад"
+                HorizontalAlignment="Left"
+                Margin="24,310,0,0"
+                VerticalAlignment="Top"
+                Width="75" 
+                Style="{StaticResource Entrance}" 
+                Background="#FF8EF96E" 
+                FontSize="20" 
+                Click="back"/>
     </Grid>
 </Window>

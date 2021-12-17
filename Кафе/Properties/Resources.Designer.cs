@@ -61,23 +61,6 @@ namespace Кафе.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на &lt;ResourceDictionary xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
-        ///                    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;&gt;
-        ///    &lt;Style x:Key=&quot;Entrance&quot; TargetType=&quot;Button&quot;&gt;
-        ///        &lt;Setter Property=&quot;Background&quot; Value=&quot;#FFFFE64A&quot;/&gt;
-        ///        &lt;Setter Property=&quot;Foreground&quot; Value=&quot;#FF7F42EA&quot;/&gt;
-        ///        &lt;Setter Property=&quot;Template&quot;&gt;
-        ///            &lt;Setter.Value&gt;
-        ///                &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;
-        ///                    &lt;Border CornerRadius=&quot;15&quot; Background=&quot;{ [остаток строки не уместился]&quot;;.
-        /// </summary>
-        internal static string ButtonStyle {
-            get {
-                return ResourceManager.GetString("ButtonStyle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
         internal static byte[] myla_01 {
