@@ -10,6 +10,7 @@
 	<Grid>
         <TabControl>
 
+            
             <TabItem x:Name="sotr" Header="Сорудники">
                 <Grid>
                     <Grid.Background>
